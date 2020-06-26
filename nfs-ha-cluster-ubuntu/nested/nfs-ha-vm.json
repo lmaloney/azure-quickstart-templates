@@ -164,6 +164,7 @@
             ],
             "location": "[parameters('location')]",
             "name": "[variables('vmResourceName')]",
+            "timeout":"P1D",
             "properties": {
                 "availabilitySet": {
                     "id": "[parameters('availSetId')]"
@@ -226,6 +227,7 @@
                         "[concat('Microsoft.Compute/virtualMachines/', variables('vmResourceName'))]"
                     ],
                     "location": "[parameters('location')]",
+                    "timeout":"P1D",
                     "name": "setup_nfs_ha",
                     "properties": {
                         "publisher": "Microsoft.Azure.Extensions",
