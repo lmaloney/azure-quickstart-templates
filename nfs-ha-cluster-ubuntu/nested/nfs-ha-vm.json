@@ -230,6 +230,7 @@
                     "timeout":"P1D",
                     "name": "setup_nfs_ha",
                     "properties": {
+                        "timeout": "PT1H",
                         "publisher": "Microsoft.Azure.Extensions",
                         "settings": {
                             "fileUris": [
